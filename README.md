@@ -1,15 +1,15 @@
 # Meme Generator
 
-Dockerizirana aplikacija koja omogućava generisanje meme-a sa gornjim i donjim tekstom.
+Dockerizirana aplikacija katera omogoca generiranje meme-a z spodnjim in zgornjim besedilom.
 
-## Pokretanje
+## Zagon
 
 1. Build Docker image:
 docker build -t meme-generator:latest .
 
-2. Pokretanje kontejnera:
+2. Zagon kontejnerja:
 docker run -d -p 5000:5000 --name meme-run -v "${PWD}/static:/app/static" meme-generator:latest
 
-3. Otvoriti u browseru:
+3. Odpiranje v brskalniku:
 http://127.0.0.1:5000
 
